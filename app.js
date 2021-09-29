@@ -60,5 +60,4 @@ toggleBtn.addEventListener('click', (e) => {
 		switchToggle = 0;
 		container.classList.remove('gr');
 	}
-
 })
