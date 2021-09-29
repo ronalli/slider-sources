@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
+	position: relative;
 }
 
 .container {
@@ -58,6 +59,12 @@ body {
   background-position: center center;
   height: 100%;
   width: 100%;
+  cursor: pointer;
+  transition: transform 0.25s ease-in;
+}
+
+.main-slide > div:hover {
+  transform: scale(1.01);
 }
 
 button {
@@ -67,6 +74,7 @@ button {
   cursor: pointer;
   font-size: 16px;
   padding: 15px;
+  transition: color 0.25s ease-in;
 }
 
 button:hover {
@@ -81,7 +89,7 @@ button:focus {
   position: absolute;
   left: 35%;
   top: 50%;
-  z-index: 100;
+  z-index: 1001;
 }
 
 .container .controls .down-button {
@@ -94,4 +102,18 @@ button:focus {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.switch-btn {
+	position: absolute;
+	z-index: 100;
+	left: 20px;
+	top: 20px;
+	cursor: pointer;
+	font-size: 32px;
+	color: rgb(20, 19, 19);
+}
+
+.gr {
+	filter: grayscale(1);
 }
